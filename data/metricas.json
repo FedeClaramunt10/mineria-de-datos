@@ -1,0 +1,185 @@
+{
+  "dataset": {
+    "filas_original": 1599,
+    "columnas": 12,
+    "duplicados": 240,
+    "nulos": 0,
+    "filas_final": 1359,
+    "train": 1087,
+    "test": 272,
+    "pct_outliers_variables": {
+      "fixed_acidity": 3.02,
+      "volatile_acidity": 1.4,
+      "citric_acid": 0.07,
+      "residual_sugar": 9.27,
+      "chlorides": 6.4,
+      "free_sulfur_dioxide": 1.91,
+      "total_sulfur_dioxide": 3.31,
+      "density": 2.58,
+      "ph": 2.06,
+      "sulphates": 4.05,
+      "alcohol": 0.88,
+      "quality": 1.99
+    },
+    "pct_filas_con_outlier": 25.02
+  },
+  "regresion_lineal": {
+    "train": {
+      "MAE": 0.5106962445230667,
+      "RMSE": 0.6585388890409953,
+      "R2": 0.3519900975786109
+    },
+    "test": {
+      "MAE": 0.5041409053480713,
+      "RMSE": 0.656512760797608,
+      "R2": 0.3915360499058189
+    }
+  },
+  "arboles": {
+    "3": {
+      "train": {
+        "MAE": 0.518765462895365,
+        "RMSE": 0.6701689075989705,
+        "R2": 0.3288998451766638
+      },
+      "test": {
+        "MAE": 0.5137784666284935,
+        "RMSE": 0.6828040481774575,
+        "R2": 0.3418260593915805
+      }
+    },
+    "5": {
+      "train": {
+        "MAE": 0.4698766620152272,
+        "RMSE": 0.603738871560048,
+        "R2": 0.4553505536259861
+      },
+      "test": {
+        "MAE": 0.49253056857454,
+        "RMSE": 0.6316705364849855,
+        "R2": 0.43671297325906155
+      }
+    },
+    "sin_límite": {
+      "train": {
+        "MAE": 0.0,
+        "RMSE": 0.0,
+        "R2": 1.0
+      },
+      "test": {
+        "MAE": 0.6507352941176471,
+        "RMSE": 0.9451890567189066,
+        "R2": -0.26120556414219465
+      }
+    }
+  },
+  "mejor_profundidad": "5",
+  "coeficientes_lr": {
+    "fixed_acidity": -0.04967,
+    "volatile_acidity": -0.17849,
+    "citric_acid": -0.01915,
+    "residual_sugar": -0.00523,
+    "chlorides": -0.11597,
+    "free_sulfur_dioxide": 0.04872,
+    "total_sulfur_dioxide": -0.1236,
+    "density": 0.04206,
+    "ph": -0.12155,
+    "sulphates": 0.1485,
+    "alcohol": 0.33397
+  },
+  "intercepto_lr": 5.63661,
+  "importancias_arbol": {
+    "fixed_acidity": 0.01896,
+    "volatile_acidity": 0.12361,
+    "citric_acid": 0.0,
+    "residual_sugar": 0.03166,
+    "chlorides": 0.01387,
+    "free_sulfur_dioxide": 0.03145,
+    "total_sulfur_dioxide": 0.05562,
+    "density": 0.02118,
+    "ph": 0.01608,
+    "sulphates": 0.20439,
+    "alcohol": 0.4832
+  },
+  "experimento_con_duplicados": {
+    "regresion_lineal_test": {
+      "MAE": 0.5035304415524375,
+      "RMSE": 0.624519930798013,
+      "R2": 0.4031803412796219
+    },
+    "arboles_test": {
+      "3": {
+        "MAE": 0.54097632624191,
+        "RMSE": 0.6820495881431973,
+        "R2": 0.2881599544781357
+      },
+      "5": {
+        "MAE": 0.4963861466527857,
+        "RMSE": 0.6584145312548151,
+        "R2": 0.3366399264084673
+      },
+      "sin_límite": {
+        "MAE": 0.4625,
+        "RMSE": 0.7786205751198718,
+        "R2": 0.07231130172297862
+      }
+    },
+    "filas_test_tambien_en_train": 10,
+    "filas_test_total": 320,
+    "validacion_cruzada": {
+      "Regresión Lineal": {
+        "R2_promedio": 0.29004,
+        "R2_desvío": 0.08446
+      },
+      "Árbol (prof. 5)": {
+        "R2_promedio": 0.19931,
+        "R2_desvío": 0.0673
+      }
+    }
+  },
+  "validacion_cruzada": {
+    "Regresión Lineal": {
+      "R2_promedio": 0.29001,
+      "R2_desvío": 0.08521,
+      "MAE_promedio": 0.51749,
+      "MAE_desvío": 0.01133
+    },
+    "Árbol (prof. 3)": {
+      "R2_promedio": 0.21368,
+      "R2_desvío": 0.08164,
+      "MAE_promedio": 0.54574,
+      "MAE_desvío": 0.01727
+    },
+    "Árbol (prof. 5)": {
+      "R2_promedio": 0.1674,
+      "R2_desvío": 0.07228,
+      "MAE_promedio": 0.57176,
+      "MAE_desvío": 0.02487
+    },
+    "Árbol (prof. sin_límite)": {
+      "R2_promedio": -0.39799,
+      "R2_desvío": 0.13764,
+      "MAE_promedio": 0.65782,
+      "MAE_desvío": 0.07629
+    }
+  },
+  "tabla_final": {
+    "Regresión Lineal": {
+      "MAE_test": 0.50414,
+      "RMSE_test": 0.65651,
+      "R2_test": 0.39154,
+      "brecha_R2_train_test": -0.03955,
+      "R2_validacion_cruzada_5folds": 0.29001,
+      "R2_cv_desvío": 0.08521
+    },
+    "Árbol (prof. 5)": {
+      "MAE_test": 0.49253,
+      "RMSE_test": 0.63167,
+      "R2_test": 0.43671,
+      "brecha_R2_train_test": 0.01864,
+      "R2_validacion_cruzada_5folds": 0.1674,
+      "R2_cv_desvío": 0.07228
+    }
+  },
+  "modelo_final": "Regresión Lineal Múltiple"
+}
