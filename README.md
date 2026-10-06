@@ -1,6 +1,6 @@
-# Minería de Datos
+﻿# Minería de Datos
 
-Trabajos de las materias Minería de Datos I y II de la Tecnicatura en Análisis de Datos e Inteligencia Artificial: proceso KDD, transformación de datos, reducción de dimensionalidad y evaluación de modelos de regresión.
+Trabajos de las materias Minería de Datos I y II de la Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial: proceso KDD, transformación de datos, reducción de dimensionalidad y evaluación de modelos de regresión.
 
 ## Notebooks
 
